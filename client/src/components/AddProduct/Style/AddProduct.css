@@ -1,0 +1,17 @@
+.style-flex{
+    display:flex;
+    justify-content: space-between;
+}
+
+.flex1-item{
+    flex-basis:30%;
+    
+}
+
+.flex2-item{
+    flex-basis:65%;
+}
+
+.borderPadding{
+    padding: 50px 80px !important;
+}

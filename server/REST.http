@@ -1,0 +1,68 @@
+POST http://localhost:5000/Register
+Content-Type: application/json
+
+{
+    "fullName" : "TranThanhHung1",
+    "userName" : "tranthanhhung11",
+    "passWord" : "016016"
+}
+
+
+###
+POST http://localhost:5000/Login
+Content-Type: application/json
+
+{
+    "userName" : "tranthanhhung",
+    "passWord" : "016016"
+}
+
+###  
+GET http://localhost:5000/GetItemsByType/:type
+
+###
+GET http://localhost:5000/GetAllItems
+
+###
+POST http://localhost:5000/AddNewItem
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmEyMjkyNDZlMWJiMzlmODJlYmI2MmMiLCJpYXQiOjE2NTQ4NTIxMDZ9.pJbT8ZpFMcoXezGo1Gigj8smntztOYUoCpbRgQBmNS4
+
+{
+    "itemType": "Shoe",
+    "itemName": "ShoeShoe",
+    "description": "ShoeShoeShoe",
+    "itemPrice": 50000,
+    "itemImg": "xyz"
+}
+
+
+###
+GET http://localhost:5000/GetItemsByKeyWord/H
+
+###
+GET http://localhost:5000/GetUserById/62a229246e1bb39f82ebb62c
+
+###
+GET http://localhost:5000/GetItemById/62a2bd6902c2b0a94a9f2ce3
+
+###
+POST http://localhost:5000/AddOrder
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmE1YTU4NjY2MThkNzUwZGZjODJlOWYiLCJpYXQiOjE2NTUzMDg0Mzd9.1RcKeC0R_wH70dtEs8zk32_A0xvn9stTcFdLQeU4hg8
+
+{
+    "item_id" : "62a2bd6902c2b0a94a9f2ce3",
+    "number" : 2
+}
+
+###
+GET http://localhost:5000/GetOrders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmE1YTU4NjY2MThkNzUwZGZjODJlOWYiLCJpYXQiOjE2NTUyMTQzNDl9.ci8kRzmAE0ZIvX64y9MBEUAM_Q3A0Xg8mv4xZKx75vg
+
+###
+DELETE url HTTP/1.1
+
+### 
+DELETE http://localhost:5000/DeleteOrderById/62ac3258f1e088eaa87b1681
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmE1YTU4NjY2MThkNzUwZGZjODJlOWYiLCJpYXQiOjE2NTU1MjczNzJ9.3dqFTP3FL2-0doffgahX6E7IBuH6zw7i_DLG_6nk7eM

@@ -1,0 +1,17 @@
+table img{
+    height: 100px;
+}
+table td span:last-child{
+    float: right;
+}
+ .number{
+    text-align: center;
+}
+.info-user-name h5{
+    padding-bottom: 10px;
+}
+.info-user-name h5, .cart-summary{
+    border-bottom: 1px solid black;
+}
+
+
